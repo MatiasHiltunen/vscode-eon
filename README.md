@@ -10,7 +10,7 @@ This extension aims to provide syntax highlighting for the [EON](https://github.
 
 ## Installation
 
-You can install this extension from the Visual Studio Code Marketplace (once it's published).
+You can install this extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=mh1.vscode-eon).
 
 For local development:
 
