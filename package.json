@@ -1,14 +1,19 @@
 {
     "name": "vscode-eon",
-    "displayName": "EON Support",
-    "description": "Syntax highlighting for the EON configuration language.",
+    "displayName": "EON",
+    "description": "Syntax highlighting for the EON configuration language with .eon file extension.",
     "version": "0.0.3",
-    "publisher": "eon-vscode",
+    "publisher": "mh1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/matiashiltunen/vscode-eon"
+    },
     "engines": {
         "vscode": "^1.85.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Configuration"
     ],
     "contributes": {
         "languages": [
