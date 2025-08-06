@@ -1,0 +1,36 @@
+{
+    "name": "vscode-eon",
+    "displayName": "EON Support",
+    "description": "Syntax highlighting for the EON configuration language.",
+    "version": "0.0.3",
+    "publisher": "eon-vscode",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "eon",
+                "aliases": [
+                    "EON",
+                    "eon"
+                ],
+                "extensions": [
+                    ".eon"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "eon",
+                "scopeName": "source.eon",
+                "path": "./syntaxes/eon.tmLanguage.json"
+            }
+        ]
+    }
+}
+

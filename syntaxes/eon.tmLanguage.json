@@ -1,0 +1,132 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "EON",
+    "scopeName": "source.eon",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#map-keys"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#punctuation"
+        },
+        {
+            "include": "#identifiers"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "name": "comment.line.double-slash.eon",
+            "match": "//.*"
+        },
+        "strings": {
+            "patterns": [
+                {
+                    "name": "string.quoted.double.multi-line.eon",
+                    "begin": "\"\"\"",
+                    "end": "\"\"\"",
+                    "patterns": [
+                        {
+                            "include": "#escapes"
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.single.multi-line.eon",
+                    "begin": "'''",
+                    "end": "'''"
+                },
+                {
+                    "name": "string.quoted.double.eon",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "include": "#escapes"
+                        }
+                    ]
+                },
+                {
+                    "name": "string.quoted.single.eon",
+                    "begin": "'",
+                    "end": "'"
+                }
+            ]
+        },
+        "escapes": {
+            "patterns": [
+                {
+                    "name": "constant.character.escape.unicode.eon",
+                    "match": "\\\\u\\{[0-9a-fA-F]+\\}"
+                },
+                {
+                    "name": "constant.character.escape.eon",
+                    "match": "\\\\[\"\\\\/bfnrt]"
+                },
+                {
+                    "name": "constant.character.escape.line-continuation.eon",
+                    "match": "\\\\\\s*\\n"
+                }
+            ]
+        },
+        "map-keys": {
+            "name": "entity.name.tag.eon",
+            "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=:)"
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.float.eon",
+                    "match": "\\b[+\\-]?(inf|nan)\\b"
+                },
+                {
+                    "name": "constant.numeric.hex.eon",
+                    "match": "\\b0[xX][0-9a-fA-F_]+\\b"
+                },
+                {
+                    "name": "constant.numeric.binary.eon",
+                    "match": "\\b0[bB][01_]+\\b"
+                },
+                {
+                    "name": "constant.numeric.float.eon",
+                    "match": "\\b[\\d_]*\\.[\\d_]+([eE][+\\-]?[\\d_]+)?\\b"
+                },
+                {
+                    "name": "constant.numeric.integer.eon",
+                    "match": "\\b\\d[\\d_]*\\b"
+                }
+            ]
+        },
+        "keywords": {
+            "name": "constant.language.eon",
+            "match": "\\b(true|false|null)\\b"
+        },
+        "punctuation": {
+            "patterns": [
+                { "name": "punctuation.separator.key-value.eon", "match": ":" },
+                { "name": "punctuation.separator.comma.eon", "match": "," },
+                { "name": "punctuation.definition.list.begin.eon", "match": "\\[" },
+                { "name": "punctuation.definition.list.end.eon", "match": "\\]" },
+                { "name": "punctuation.definition.map.begin.eon", "match": "\\{" },
+                { "name": "punctuation.definition.map.end.eon", "match": "\\}" },
+                { "name": "punctuation.definition.variant.begin.eon", "match": "\\(" },
+                { "name": "punctuation.definition.variant.end.eon", "match": "\\)" }
+            ]
+        },
+        "identifiers": {
+            "name": "variable.other.eon",
+            "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        }
+    }
+}
