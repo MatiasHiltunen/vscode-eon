@@ -2,7 +2,7 @@
 
 Primitive syntax highlighting for `.eon` files.
 
-This extension aims to provide syntax highlighting for the [EON](https://github.com/eon-config/eon) configuration language in Visual Studio Code.
+This extension aims to provide syntax highlighting for the [eon](https://github.com/emilk/eon) configuration language in Visual Studio Code.
 
 
 ![EON Syntax Highlighting Screenshot](./assets/images/example_highlighting_v3.png) 
