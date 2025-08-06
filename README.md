@@ -1,4 +1,4 @@
-# EON Support for VS Code
+# Eon Support for VS Code
 
 Primitive syntax highlighting for `.eon` files.
 
