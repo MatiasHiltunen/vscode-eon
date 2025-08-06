@@ -1,16 +1,12 @@
 # EON Support for VS Code
 
-This extension provides syntax highlighting for the [EON](https://github.com/eon-config/eon) configuration language in Visual Studio Code.
+Primitive syntax highlighting for `.eon` files.
 
-## Features
+This extension aims to provide syntax highlighting for the [EON](https://github.com/eon-config/eon) configuration language in Visual Studio Code.
 
-*   Syntax highlighting for `.eon` files.
-*   Comment toggling (`//`).
-*   Bracket matching for `{}`, `[]`, and `()`.
-*   Auto-closing pairs for brackets and quotes.
 
-![EON Syntax Highlighting Screenshot](https://raw.githubusercontent.com/eon-config/eon/main/assets/screenshot.png) 
-(Note: You will need to provide a real screenshot here)
+![EON Syntax Highlighting Screenshot](./assets/images/example_highlighting_v3.png) 
+
 
 ## Installation
 
