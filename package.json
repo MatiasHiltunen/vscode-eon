@@ -2,7 +2,7 @@
     "name": "vscode-eon",
     "displayName": "EON",
     "description": "Syntax highlighting for the EON configuration language with .eon file extension.",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "publisher": "mh1",
     "repository": {
         "type": "git",
@@ -15,6 +15,7 @@
         "Programming Languages",
         "Other"
     ],
+  "icon": "assets/images/logo.png",
     "contributes": {
         "languages": [
             {
