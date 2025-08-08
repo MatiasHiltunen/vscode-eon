@@ -22,12 +22,10 @@ jobs:
 
       - name: Publish to Visual Studio Marketplace
         run: vsce publish
-        working-directory: vscode-eon
         env:
           VSCE_PAT: ${{ secrets.VS_MARKETPLACE_TOKEN }}
 
       - name: Publish to Open VSX Registry
         run: ovsx publish
-        working-directory: vscode-eon
         env:
           OVSX_PAT: ${{ secrets.OPEN_VSX_TOKEN }}
